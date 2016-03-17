@@ -7,21 +7,23 @@
   </head>
   <body>
 
+
+
 <!-- nav bar left -->
-<div id="wrapper">
-    <img id="wikipedia-logo" src="img/wikipedia.png" alt="Wikipedia Logo, a Grey Globe">
-    <div id="sidebar-wrapper1">
-        <ul class="sidebar-nav">
-            <li class="sidebar-top"><a href="#">Home</a></li>
-            <li><a href="#">Main page</a></li>
-            <li><a href="#">Contents</a></li>
-            <li><a href="#">Featured content</a></li>
-            <li><a href="#">Current events</a></li>
-            <li><a href="#">Random article</a></li>
-            <li><a href="#">Donate to Wikipedia</a></li>
-            <li><a href="#">Wikipedia store</a></li>
-          </ul>
-      </div>
+<div class="container sidebar">
+  <div class="row">
+    <div class="col-md-12">
+        <img id="wikipedia-logo" src="img/wikipedia.png" alt="Wikipedia Logo, a Grey Globe">
+      <ul class="sidebar-nav">
+          <li class="sidebar-top"><a href="#">Home</a></li>
+          <li><a href="#">Main page</a></li>
+          <li><a href="#">Contents</a></li>
+          <li><a href="#">Featured content</a></li>
+          <li><a href="#">Current events</a></li>
+          <li><a href="#">Random article</a></li>
+          <li><a href="#">Donate to Wikipedia</a></li>
+          <li><a href="#">Wikipedia store</a></li>
+        </ul>
       <div id="sidebar-wrapper2">
           <ul class="sidebar-nav">
             <li class="sidebar-bottom"><a href="#">Interaction</a></li>
@@ -128,98 +130,84 @@
                 </ul>
               </ul>
             </div>
-    </div>
-
-
-    <div id="page-content-wrapper">
-        <div class="page-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <!-- content of page -->
-                    </div>
-                </div>
-            </div>
         </div>
+      </div>
     </div>
-</div>
-
 
 <!-- special so many buttons -->
 <!-- end special so many buttons -->
 
 <!-- end nav bar 1 -->
 
-<!-- container -->
 
-<div class="container">
+
 
 <!-- text float right -->
-<div class="text-right">
-<ul class="list-inline list-unstyled">
-    <li>Not logged in</li>
-    <li>Talk</li>
-    <li>Contributions</li>
-    <li>Create account</li>
-    <li>Log in</li>
-</ul>
-</div>
+
+<div class="container main">
+
+      <div class="text-right">
+      <ul class="list-inline list-unstyled">
+          <li>Not logged in</li>
+          <li>Talk</li>
+          <li>Contributions</li>
+          <li>Create account</li>
+          <li>Log in</li>
+      </ul>
+      </div>
 
 
 
 <!-- nav bar 2 -->
-<nav class="navbar navbar-default">
-  <ul class="nav navbar-nav navbar-left">
+<nav class="navbar">
+  <ul class="nav navbar-nav navbar-pull">
     <li role="presentation" class="active"><a href="#">Main</a></li>
     <li role="presentation"><a href="#">Talk</a></li>
   </ul>
-  <ul class="nav navbar-nav navbar-right">
+  <ul class="nav navbar-nav navbar-push">
     <li role="presentation" class="active"><a href="#">Read</a></li>
     <li role="presentation"><a href="#">View Source</a></li>
     <li role="presentation"><a href="#">View History</a></li>
   </ul>
-  <form class="navbar-form navbar-right" role="search">
+  <form class="navbar-form navbar-push" role="search">
     <div class="form-group">
       <input type="text" class="form-control" placeholder="Search">
     </div>
-</div>
+
 <!-- end nav bar 2 -->
 
 <!-- row 1 header -->
-  <div class="row1 col-md-12">
-      <div class="column1 col-md-9 col-md-7">
-        Welcome to Wikipedia,
-    the free encyclopedia that anyone can edit.
-    5,106,688 articles in English
+
+  <div class="row intro">
+      <div class="col-lg-6">
+        <p>Welcome to Wikipedia, the free encyclopedia that anyone can edit. 5,106,688 articles in English</p>
       </div>
-      <div class="column2 col-md-1 col-md-1.6">
-
-      <li><a href="#">Arts</a></li>
-      <li><a href="#">Biography</a></li>
-      <li><a href="#">Geography</a></li>
-    </div>
-    <div class="column3 col-md-1 col-md-1.6">
-      <li><a href="#">History</a></li>
-      <li><a href="#">Mathematics</a></li>
-      <li><a href="#">Science</a></li>
-    </div>
-    <div class="column4 col-md-1 col-md-1.6">
-      <li><a href="#">Society</a></li>
-      <li><a href="#">Technology</a></li>
-      <li><a href="#">All portals</a></li>
-    </div>
-
+      <div class="col-lg-2">
+        <li><a href="#">Arts</a></li>
+        <li><a href="#">Biography</a></li>
+        <li><a href="#">Geography</a></li>
+      </div>
+      <div class="col-lg-2">
+        <li><a href="#">History</a></li>
+        <li><a href="#">Mathematics</a></li>
+        <li><a href="#">Science</a></li>
+      </div>
+      <div class="col-lg-2">
+        <li><a href="#">Society</a></li>
+        <li><a href="#">Technology</a></li>
+        <li><a href="#">All portals</a></li>
+      </div>
 </div>
-</div>
+
 
 <!-- end row 1 header -->
 
 <!-- row 2 -->
-<div class="row1 col-md-12">
+<div class="row features">
 
 <!-- column 1 -->
-<div class="column1 col-md-6 col-md-6">
-  <div id="header1">
+<div class="col-md-6 green">
+  <div id="header">
     <p>From today's featured article</p>
   </div>
   <img id="final-fantasy" src="img/final-fantasy.jpg" alt="Final Fantasy Logo">
@@ -228,7 +216,7 @@
   <p>Recently featured: Hurricane Charley (1986) California State Route 78 Sarcoscypha coccinea</p>
   <p id="archive">Archive By email More featured articles...</p>
 
-  <div id="header2">
+  <div id="header">
     <p>From today's featured article</p>
   </div>
   <img id="rama" src="img/rama.jpg" alt="Rama">
@@ -248,8 +236,8 @@
 <!-- end column 1 -->
 
 <!-- column 2 -->
-<div class="column2 col-md-6 col-md-6">
-  <div id="header1">
+<div class="col-md-6 blue">
+  <div id="header">
     <p>	In the news</p>
     <img id="eclipse" src="img/eclipse.jpg" alt="Lunar eclipse">
     <p>Total solar eclipse, viewed from Balikpapan</p>
@@ -263,7 +251,7 @@
     <p>Ongoing events: Zika virus outbreak European migrant crisis</p>
     <p>Recent deaths: Hilary Putnam Lloyd Shapley Iolanda Balaș</p>
   </div>
-  <div id="header2">
+  <div id="header">
     <p>On this day...</p>
   <p>March 17: Saint Patrick's Day</p>
   <img id="ss" src="img/ss.jpg" alt="Sinking of the SS Utopia">
@@ -288,8 +276,8 @@
 
 
 <!-- row 3 -->
-<div class="row3 col-md-12">
-  <div id="header3">
+<div class="row">
+  <div class="col-lg-12">
     <p>Today's featured picture</p>
   </div>
   <img id="manuscript" src="img/manuscript.jpg" alt="manuscript">
@@ -304,8 +292,8 @@
 <!-- end row 3 -->
 
 <!-- row 4 -->
-<div class="row4 col-md-12">
-  <div id="header4">
+<div class="row">
+  <div id="header">
     <p>Other areas of Wikipedia</p>
   </div>
   <ul>
@@ -320,11 +308,11 @@
 <!-- end row 4 -->
 
 <!-- row 5 -->
-<div class="row5 col-md-12">
-  <div id="header5">
+<div class="row">
+  <div id="header">
     <p>Today's featured picture</p>
   </div>
-  <div class="column1 col-md-4">
+  <div class="col-md-4">
     <ul>
       <li><img src="img/commons.png">
         <p>Commons</p>
@@ -340,7 +328,7 @@
         <p>Free learning materials and activities	</p></li>
     </ul>
   </div>
-  <div class="column2 col-md-4">
+  <div class="col-md-4">
     <ul>
       <li><img src="img/mediawiki.png">
         <p>MediaWiki</p>
@@ -356,7 +344,7 @@
         <p>Free travel guide</p></li>
     </ul>
   </div>
-  <div class="column3 col-md-4">
+  <div class="col-md-4">
     <ul>
       <li><img src="img/meta.png">
         <p>Meta-Wiki</p>
@@ -377,8 +365,8 @@
 <!-- end row 5 -->
 
 <!-- row 6 -->
-<div class="row6 col-md-12">
-  <div id="header6">
+<div class="row">
+  <div id="header">
     <p>Wikipedia languages</p>
   </div>
   <p>This Wikipedia is written in English. Started in 2001, it currently contains 5,106,842 articles. Many other Wikipedias are available; some of the largest are listed below.</p>
@@ -392,7 +380,7 @@
 
 
 <!-- footer -->
-<div class="footer">
+<div class="row">
   <p>Text is available under the Creative Commons Attribution-ShareAlike License; additional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.</p>
   <ul class="list-inline list-unstyled">
       <li>Privacy policy</li>
@@ -410,6 +398,8 @@
 <!-- end footer -->
 
 <!-- end container -->
+</div>
+</div>
 </div>
 
   </body>
